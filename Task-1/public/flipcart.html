@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipcart | Demo</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        main {
+
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            place-items: center;
+        }
+
+        .mobile-name {
+            font-weight: 700;
+            font-size: 18px;
+            display: block;
+            cursor: pointer;
+        }
+
+        .mobile-name:hover {
+
+            color: blue;
+        }
+
+        #rating {
+            background-color: rgb(1, 90, 45);
+            color: #fff;
+            padding: 5px;
+            display: inline-block;
+            border-radius: 5px;
+            margin: 5px 0;
+            width: 42px;
+        }
+
+        .bi-star-fill {
+            font-size: 13px;
+            padding: 0 0 0 6px;
+
+        }
+
+        #rating-count {
+            color: gray;
+            font-family: 'monospace', sans-serif;
+        }
+
+
+        #b-text {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        #s-text {
+            color: gray;
+        }
+
+        #g-text {
+            color: green;
+            font-size: 12px;
+        }
+
+        #li-3 {
+            font-size: 14px;
+            letter-spacing: 1.2px;
+        }
+
+        #aside li {
+
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="img">
+            <img src="../images/realme nazro.jpeg" alt="">
+        </div>
+        <div class="info">
+            <span class="bi bi-heart-fill"></span>
+            <span class="mobile-name"> realme Narzo 50A (Oxygen Green, 64 GB) (4 GB RAM)</span>
+            <div id="rating">4.4<span class="bi bi-star-fill"> </span></div>
+            <span id="rating-count">4.42,23,129 Ratings & 13,563 Reviews</span>
+
+            <ul id="info-list">
+                <li>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</li>
+                <li>16.51 cm (6.5 inch) HD+ Display</li>
+                <li> 50MP + 2MP + 2MP | 8MP Front Camera</li>
+                <li>6000 mAh Battery</li>
+                <li>MediaTek Helio G85 Processor</li>
+                <li>1 Year Warranty for Mobile and 6 Months for Accessories</li>
+            </ul>
+
+        </div>
+        <div id="aside">
+            <ol>
+                <li id="b-text">$11,549</li>
+                <li><strike id="s-text">$12,999</strike> <span id="g-text">11% off</span></li>
+                <li id="li-3">Free delivery</li>
+                <li>Upto <b>$11,000</b> Off on Exchange</li>
+            </ol>
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

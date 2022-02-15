@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.nav-main-container {
+    display: flex;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.main {
+    display: grid;
+    /* grid-template-columns: 2fr 10fr; */
+}
+
+nav {
+    position: fixed;
+    left: 0;
+}
+
+nav ul {
+    /* padding: 0; */
+    /* margin: 0; */
+    height: 100vh;
+    background-color: aqua;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+nav li {
+    padding: 10px 10px;
+    margin: 5px 10px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+main #banner-container img {
+    width: 100vw;
+    object-fit: contain;
+    box-shadow: 56px -37px 95px 12px #deab00;
+}
+
+.cards {
+    height: auto;
+    width: 320px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 56px -37px 95px 12px #f2c941ba;
+    margin: 5px;
+    position: relative;
+    bottom: 355px;
+    left: 88px;
+}
+
+.cards a {
+    font-size: 15px;
+    color: green;
+    text-decoration: none;
+    padding: 0px 5px 0px 30px;
+    margin: 5px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-head {
+    margin: 25px 21px 0px 14px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 23px 0;
+}
+
+.img-container img {
+    width: 140px;
+    margin: 6px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-card {
+    height: 145px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-card button {
+    background-color: #eac750;
+    border-radius: 6px;
+    font-size: 16px;
+    border: none;
+    width: 90%;
+    padding: 4px;
+}
+
+#sign-in {
+    padding: 11px 0px 10px 12px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 253px;
+}
+
+.signin-card img {
+    width: 233px;
+    margin-top: 59px;
+}

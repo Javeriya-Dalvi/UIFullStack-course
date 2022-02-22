@@ -2,6 +2,10 @@
 https://juveriad.github.io/UIFullStack7PM/Task-1/public/index.html
 <hr>
 
+### Amazon Shopping
+https://juveriad.github.io/UIFullStack7PM/Task-1/public/index2.html
+<hr>
+
 ### Fake Store API
 
 https://juveriad.github.io/UIFullStack7PM/Task-1/public/fakestoreapi.html

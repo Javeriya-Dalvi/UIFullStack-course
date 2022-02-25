@@ -13,3 +13,6 @@ https://juveriad.github.io/UIFullStack7PM/Task-1/public/fakestoreapi.html
 
 ### Naresh-IT
 https://juveriad.github.io/UIFullStack7PM/Task-1/public/naresh-IT.html
+
+### Instagram Login
+https://juveriad.github.io/UIFullStack7PM/Task-1/public/instagram.html

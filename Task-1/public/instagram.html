@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login | Instagram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .img-container {
+            display: none;
+        }
+        
+        main {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 50px;
+            font-weight: 100;
+            margin-bottom: 44px;
+        }
+        
+        input {
+            display: block;
+            padding: 8px 5px;
+            width: 261px;
+            margin: 6px auto;
+            border-radius: 5px;
+            border: 1px solid rgb(167, 166, 166);
+        }
+        
+        #login-btn {
+            color: white;
+            background-color: #acd9ee;
+            font-weight: 700;
+            margin-top: 11px;
+            border: none;
+        }
+        
+        .sub-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            border-top: 2px solid #e2dfdf;
+            margin: 36px 17px;
+        }
+        
+        #OR {
+            position: relative;
+            bottom: 17px;
+            background-color: white;
+            padding: 10px 10px;
+            font-weight: bold;
+            color: #b6b8b8;
+            font-size: 13px;
+        }
+        
+        #FB {
+            padding: 2px 25px;
+            color: #1468be;
+            font-weight: 700;
+            background-color: white;
+            border: none;
+        }
+        
+        #FP {
+            font-weight: lighter;
+            font-size: 14px;
+            text-decoration: none;
+            color: #1468be;
+            margin-top: 10px;
+        }
+        
+        .text-container {
+            background-color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            text-align: center;
+            margin: 44px 30px;
+            border: 1px solid #e5e8e8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+        }
+        
+        .container2 {
+            text-align: center;
+            background-color: aqua;
+            margin: 4px 5px;
+            display: inline-block;
+            width: 260px;
+            margin: 6px 65px;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        footer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        @media screen and (min-width:800px) {
+            .img-container {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="img-container">
+            <img src="/images/image-insta.png" alt="Instagram Image">
+        </div>
+        <div class="text-container">
+            <div class="container">
+                <h1>Instagram</h1>
+                <input type="text" placeholder="Phone number, username, email ">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="submit" value="Log In" id="login-btn" placeholder="Log In">
+
+                <div class="sub-container">
+                    <span id="OR">OR</span>
+                    <!-- bootstrapclassforfacebookicon -->
+                    <button id="FB">Log in with Facebook</button>
+                    <a href="#" id="FP">forgot password ?</a>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <p>Don't have an account? <span> Sign up</span></p>
+        </div>
+        <div class="container-3">
+            <p>Get the app.</p>
+            <button href="#">Download on the <span>App Store</span></button>
+            <button href="#">Get it on <span>Google Play</span></button>
+            <ul>
+                <li> Meta</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Jobs</li>
+                <li>Help</li>
+                <li>API</li>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Top Accounts</li>
+                <li>Hashtags</li>
+                <li>Locations</li>
+                <li>Instagram Lite</li>
+            </ul>
+        </div>
+
+    </main>
+    <footer> <select name="lang-options" id="Options">
+        <option value="opt1">English</option>
+        <option value="opt1">Urdu</option>
+        <option value="opt1">Hindi</option>
+        <option value="opt1">Marathi</option>
+        <option value="opt1">Telugu</option>
+    </select>
+        <p>© 2022 Instagram from Meta</p>
+    </footer>
+
+</body>
+
+</html>

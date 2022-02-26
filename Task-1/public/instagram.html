@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         * {
             margin: 0;
@@ -19,9 +21,27 @@
             display: none;
         }
         
+        main,
+        .sub-container,
+        ul,
+        .con,
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
         main {
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .main {
             background-color: rgb(255, 255, 255);
             display: flex;
+            flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -33,13 +53,20 @@
             margin-bottom: 44px;
         }
         
+        .border {
+            border: 1px solid rgb(167, 166, 166);
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        
         input {
             display: block;
             padding: 8px 5px;
             width: 261px;
             margin: 6px auto;
             border-radius: 5px;
-            border: 1px solid rgb(167, 166, 166);
         }
         
         #login-btn {
@@ -51,14 +78,9 @@
         }
         
         .sub-container {
-            display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-            border-top: 2px solid #e2dfdf;
             margin: 36px 17px;
+            border-top: 1px solid rgb(167, 166, 166);
         }
         
         #OR {
@@ -91,38 +113,94 @@
             background-color: rgb(255, 255, 255);
             padding: 10px 20px;
             text-align: center;
-            margin: 44px 30px;
-            border: 1px solid #e5e8e8;
+            margin: 44px 30px 11px 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 300px;
+            height: max-content;
         }
         
         .container2 {
             text-align: center;
-            background-color: aqua;
             margin: 4px 5px;
             display: inline-block;
-            width: 260px;
-            margin: 6px 65px;
+            width: 320px;
+            margin: 0 0 15px;
+            padding: 10px 5px;
         }
         
-        p {
+        #container2-p {
+            padding: 10px 0;
+        }
+        
+        #container3-p {
+            padding: 6px;
+            margin-bottom: 12px;
+        }
+        
+        #container3-p,
+        #container2-p {
             text-align: center;
         }
         
-        footer {
-            display: flex;
+        .btn-store {
+            background-color: black;
+            color: white;
+            padding: 8px;
+            margin: 5px;
+            width: 125px;
+            text-align: left;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+        
+        #app2 {
+            width: 130px;
+        }
+        
+        .app {
+            display: block;
+        }
+        
+        ul li {
+            list-style-type: none;
+            margin: 2px 7px;
+        }
+        
+        .footer {
+            margin: 18px;
             flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+        }
+        
+        select {
+            margin-right: 23px;
+        }
+        
+        .con {
+            flex-direction: column;
+        }
+        
+        .another-con {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        
+        footer,
+        select {
+            color: gray;
         }
         
         @media screen and (min-width:800px) {
             .img-container {
-                display: block;
+                display: inline-block;
+                margin-top: 40px;
+                height: max-content;
+            }
+            .img-container img {
+                height: 600px;
+                border-radius: 54px;
             }
         }
     </style>
@@ -130,57 +208,69 @@
 
 <body>
     <main>
-        <div class="img-container">
-            <img src="/images/image-insta.png" alt="Instagram Image">
-        </div>
-        <div class="text-container">
-            <div class="container">
-                <h1>Instagram</h1>
-                <input type="text" placeholder="Phone number, username, email ">
-                <input type="password" name="password" id="password" placeholder="Password">
-                <input type="submit" value="Log In" id="login-btn" placeholder="Log In">
+        <div class="main">
+            <div class="img-container">
+                <img src="/images/image-insta.png" alt="Instagram Image">
+            </div>
+            <div class="another-con">
+                <div class="con">
+                    <div class="text-container border">
+                        <div class="container">
+                            <h1>Instagram</h1>
+                            <input type="text" placeholder="Phone number, username, email" class="border">
+                            <input type="password" name="password" id="password" placeholder="Password" class="border">
+                            <input type="submit" value="Log In" id="login-btn" placeholder="Log In">
 
-                <div class="sub-container">
-                    <span id="OR">OR</span>
-                    <!-- bootstrapclassforfacebookicon -->
-                    <button id="FB">Log in with Facebook</button>
-                    <a href="#" id="FP">forgot password ?</a>
+                            <div class="sub-container">
+                                <span id="OR">OR</span>
+                                <!-- bootstrapclassforfacebookicon -->
+                                <button id="FB" class="cursor"><i class="bi bi-facebook"></i>Log in with Facebook</button>
+                                <a href="#" id="FP">forgot password ?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container2 border">
+                        <p id="container2-p">Don't have an account? <span> Sign up</span></p>
+                    </div>
+                    <div class="container-3">
+                        <p id="container3-p">Get the app.</p>
+                        <button href="#" class="btn-store">Download on the <span id="app1" class="app">App
+                                Store</span></button>
+                        <button href="#" class="btn-store">Get it on <span id="app2" class="app">Google
+                                Play</span></button>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container2">
-            <p>Don't have an account? <span> Sign up</span></p>
-        </div>
-        <div class="container-3">
-            <p>Get the app.</p>
-            <button href="#">Download on the <span>App Store</span></button>
-            <button href="#">Get it on <span>Google Play</span></button>
-            <ul>
-                <li> Meta</li>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Jobs</li>
-                <li>Help</li>
-                <li>API</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Top Accounts</li>
-                <li>Hashtags</li>
-                <li>Locations</li>
-                <li>Instagram Lite</li>
-            </ul>
-        </div>
-
     </main>
-    <footer> <select name="lang-options" id="Options">
-        <option value="opt1">English</option>
-        <option value="opt1">Urdu</option>
-        <option value="opt1">Hindi</option>
-        <option value="opt1">Marathi</option>
-        <option value="opt1">Telugu</option>
-    </select>
-        <p>© 2022 Instagram from Meta</p>
+    <footer>
+        <ul class="cursor">
+            <li> Meta</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Jobs</li>
+            <li>Help</li>
+            <li>API</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Top Accounts</li>
+            <li>Hashtags</li>
+            <li>Locations</li>
+            <li>Instagram Lite</li>
+        </ul>
+        <div class="footer">
+            <select name="lang-options" id="Options" class="cursor">
+                <option value="opt1">English</option>
+                <option value="opt1">Urdu</option>
+                <option value="opt1">Hindi</option>
+                <option value="opt1">Marathi</option>
+                <option value="opt1">Telugu</option>
+            </select>
+            <p>© 2022 Instagram from Meta</p>
+        </div>
     </footer>
+
 
 </body>
 

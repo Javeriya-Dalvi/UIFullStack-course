@@ -1,1 +1,1 @@
- https://juveriad.github.io/UIFullStack7PM/Task-2/public/index.html
+ https://juveriad.github.io/UIFullStack-course/Task-2/public/index.html

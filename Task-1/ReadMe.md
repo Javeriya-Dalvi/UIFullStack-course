@@ -3,7 +3,7 @@ https://juveriad.github.io/UIFullStack-course/Task-1/public/index.html
 <hr>
 
 ### Amazon Shopping
-https://juveriad.github.io/UIFullStack-course/Task-1/public/index2.html
+https://juveriad.github.io/UIFullStack-course/Task-1/public/amazon.html
 <hr>
 
 ### Fake Store API

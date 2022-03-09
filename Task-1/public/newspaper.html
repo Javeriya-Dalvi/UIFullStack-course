@@ -6,27 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News-paper task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        p {
+            font-size: 1.6rem;
+        }
+        
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: #fff;
+            /* border: 2px solid black; */
+            padding: 10px;
+            font-size: 2.6rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        #news-container {
+            /* border: 2px solid blueviolet; */
+            column-count: 3;
+            text-align: justify;
+            column-gap: 30px;
+            column-rule: 2px dashed black;
+            margin: 5px;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        #news-container .item1 {
+            column-count: 2;
+            width: auto;
+            margin-right: 5px;
+        }
+        
+        #news-container .item4 {
+            column-count: 2;
+            margin-top: 6px;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <div class="news-container">
-            <div class="news box0 img">
+        <h1>Hindustan Times</h1>
+        <div id="news-container">
+            <div class="news item0 img">
                 <img src="../images/newspaper.PNG" alt="cricketer">
             </div>
-            <div class="news box1">
-                <p>
-                    <h1>IPL 2022: CSK begin training in Surat, fans queue up on streets to catch a glimpse of MS Dhoni</h1>
-                </p>
+            <div class="news item1">
+                <h2>IPL 2022: CSK begin training in Surat, fans queue up on streets to catch a glimpse of MS Dhoni</h2>
                 <p> Chennai Super Kings are one of the most popular Indian Premier League teams going around and the reception they received in Surat is a testimony to it. Fans queued up on the streets to catch a glimpse of MS Dhoni and CSK stars as the defending
                     champions began their training in the West Indian state of Gujarat.</p>
                 <p> In a video shared by Chennai Super Kings, MS Dhoni can be seen walking into the stadium for their training session at Surat amid much fanfare. The team bus, the trademark one in yellow, was flocked by fans as they headed to the stadium
                     from the team hotel. A fan was even spotted with the Chennai Super Kings jersey on the streets. "Those eyes that smile with love give us the joy, everywhere we go!" CSK wrote while sharing the video of fans cheering the team in Surat.</p>
             </div>
-            <div class="news box2">
-                <p>
-                    <h1>IPL 2022: CSK begin training in Surat, fans queue up on streets to catch a glimpse of MS Dhoni</h1>
-                </p>
+            <div class="news item2">
+                <h2>IPL 2022: CSK begin training in Surat, fans queue up on streets to catch a glimpse of MS Dhoni</h2>
                 <p>Left-arm wrist spinner Kuldeep Yadav has been released from India's Test squad for the 2nd match of the ongoing series against Sri Lanka, starting March 10. Kuldeep was named in the 18-man squad but he did not make it to the playing XI
                     in the first Test in Mohali despite India playing 3 spinners.</p>
                 <p>Kuldeep Yadav was added to the Test squad along with Bihar left-arm spinner Saurabh Kumar after Axar Patel was not available due to a shin injury that also kept him out of the limited-overs series against Sri Lanka and the West Indies
@@ -34,22 +79,8 @@
                     at home last year. He picked up 9 wickets across 2 matches against the Black Caps before he picked up the injury. It will be interesting to see if Axar will get a game in Bengaluru as India and Sri Lanka will look to make use of the
                     conditions in the pink-ball Test. With R Ashwin and Ravindra Jadeja certain to start, India might look to beef up the pace attack for the 2nd Test.</p>
             </div>
-            <div class="news box3">
-                <p>
-                    <h1>BCB president questions Shakib's commitment to national team</h1>
-                    The Bangladesh Cricket Board president Nazmul Hasan on Monday (March 7) raised questions over Shakib Al Hasan's commitment to the national side after he announced that he is mentally and physically exhausted and not ready to play in the upcoming tour
-                    of South Africa.</p>
-
-                <p> The BCB included Shakib in their squad for the tour of South Africa after he agreed to play in the series consisting of three ODIs and two Tests, though initially he refused to play the Test series as he wanted to make himself available
-                    for the Indian Premier League.</p>
-
-                <p> However none of the franchises were interested in picking him which paved the way for him to make himself available for the entire tour. However, there was a late twist in the tale as he announced on Sunday that constant cricket is weighing
-                    him down.</p>
-            </div>
-            <div class="news box4">
-                <p>
-                    <h1>Hardik to attend camp in B'lore for white-ball specialists</h1>
-                </p>
+            <div class="news item4">
+                <h2>Hardik to attend camp in B'lore for white-ball specialists</h2>
                 <p>The camp has been called keeping the October T20 World Cup in mind, with Indian coach Rahul Dravid and selectors driving the process. © BCCI Hardik Pandya, out of action since the T20 World Cup last October, has not been given up on by
                     the Indian team think tank and the star-all-rounder has been called for the camp underway at the National Cricket Academy (NCA) in Bangalore from March 5. Cricbuzz understands that the 28-year-old Baroda cricketer, named skipper by
                     the new Gujarat Titans franchise recently, has sought time to join the camp. He is expected to be part of it in a couple of days. His brother Krunal Pandya, also an all-rounder, however, has not been asked to report.
@@ -81,6 +112,18 @@
                 seem to have reached some kind of consensus that the last five days of the camp will be in a controlled bio-secure bubble environment so that the players can be transported to their respective IPL teams through a bubble-to-bubble transfer.
                 Messages to Dravid, BCCI office-bearers and selection committee chairman Chetan Sharma did not elicit immediate replies.</p>
 
+            </div>
+            <div class="news item3">
+                <h2>BCB president questions Shakib's commitment to national team</h2>
+                <p>
+                    The Bangladesh Cricket Board president Nazmul Hasan on Monday (March 7) raised questions over Shakib Al Hasan's commitment to the national side after he announced that he is mentally and physically exhausted and not ready to play in the upcoming tour
+                    of South Africa.</p>
+
+                <p> The BCB included Shakib in their squad for the tour of South Africa after he agreed to play in the series consisting of three ODIs and two Tests, though initially he refused to play the Test series as he wanted to make himself available
+                    for the Indian Premier League.</p>
+
+                <p> However none of the franchises were interested in picking him which paved the way for him to make himself available for the entire tour. However, there was a late twist in the tale as he announced on Sunday that constant cricket is weighing
+                    him down.</p>
             </div>
         </div>
     </main>

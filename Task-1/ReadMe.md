@@ -16,3 +16,6 @@ https://juveriad.github.io/UIFullStack-course/Task-1/public/naresh-IT.html
 
 ### Instagram Login
 https://juveriad.github.io/UIFullStack-course/Task-1/public/instagram.html
+
+### Newspaper
+https://juveriad.github.io/UIFullStack-course/Task-1/public/newspaper.html

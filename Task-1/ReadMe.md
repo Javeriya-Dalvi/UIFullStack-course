@@ -19,3 +19,6 @@ https://juveriad.github.io/UIFullStack-course/Task-1/public/instagram.html
 
 ### Newspaper
 https://juveriad.github.io/UIFullStack-course/Task-1/public/newspaper.html
+
+### Keyframes animation
+https://juveriad.github.io/UIFullStack-course/Task-1/public/rotate.html

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation task</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            border: 2px solid rgb(0, 26, 255);
+            border-radius: 50%;
+            height: 400px;
+            width: 500px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #rotate {
+            animation-name: rotate;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            padding: 15px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: black;
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        #zoom-in {
+            animation-name: zoomin;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes rotate {
+            0% {
+                position: absolute;
+                top: 350px;
+                right: 200px;
+                background-color: antiquewhite;
+                color: #000;
+            }
+            20% {
+                position: absolute;
+                top: 200px;
+                right: 300px;
+                background-color: aquamarine;
+                color: #000;
+            }
+            40% {
+                position: absolute;
+                top: 500px;
+                right: 500px;
+                background-color: rgb(227, 255, 127);
+                color: #000;
+            }
+            60% {
+                position: absolute;
+                top: 700px;
+                right: 400px;
+                background-color: rgb(255, 195, 127);
+                color: #000;
+            }
+            80% {
+                position: absolute;
+                top: 600px;
+                right: 100px;
+                background-color: rgb(247, 168, 236);
+                color: #000;
+            }
+            100% {
+                position: absolute;
+                top: 300px;
+                right: 500px;
+            }
+        }
+        
+        @keyframes zoomin {
+            from {
+                font-size: 10px;
+            }
+            to {
+                font-size: 50px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="rotate"> Course by Sudhakar Sharma</p>
+        <p id="zoom-in">Welcome to Naresh-IT</p>
+    </div>
+</body>
+
+</html>

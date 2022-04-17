@@ -1,0 +1,323 @@
+Forms and Tables
+Sudhakar Sharma
+•
+Feb 16
+Nested Tables
+- You can define a table inside another table.
+
+   <tr>
+    <td>
+          <table>
+          </table>
+    </td>
+  </tr>
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            body {
+                font-family: Arial;
+            }
+            a{
+                text-decoration: none;
+            }
+            td img {
+                width: 100%;
+                height: 100%;
+            }
+            td {
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" width="100%" frame="void" cellspacing="30" cellpadding="5">
+            <tr height="300">
+                <td>
+                    <table cellspacing="20"  width="100%">
+                        <tr heigth="100">
+                            <td colspan="2">
+                                <h2>Revamp your home in style</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic1.jpg">
+                                <p>Bedsheets, curtains and more</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic2.jpg">
+                                <p>Home decoration</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic3.jpg">
+                                <p>Home storage</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic4.jpg">
+                                <p>lighting solutions</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <a href="#">Explore all</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table  width="100%">
+                        <tr>
+                            <td colspan="2">
+                                <h2>Revamp your home in style</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic1.jpg">
+                                <p>Bedsheets, curtains and more</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic2.jpg">
+                                <p>Home decoration</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic3.jpg">
+                                <p>Home storage</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic4.jpg">
+                                <p>lighting solutions</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <a href="#">Explore all</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+                <td>
+                    <table  width="100%">
+                        <tr>
+                            <td colspan="2">
+                                <h2>Revamp your home in style</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic1.jpg">
+                                <p>Bedsheets, curtains and more</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic2.jpg">
+                                <p>Home decoration</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic3.jpg">
+                                <p>Home storage</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic4.jpg">
+                                <p>lighting solutions</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <a href="#">Explore all</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr height="200">
+                <td colspan="3">
+                    <img src="../public/images/banner.jpg">
+                </td>
+            </tr>
+            <tr height="300">
+                <td>
+                    <table cellspacing="20"  width="100%">
+                        <tr heigth="100">
+                            <td colspan="2">
+                                <h2>Revamp your home in style</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic1.jpg">
+                                <p>Bedsheets, curtains and more</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic2.jpg">
+                                <p>Home decoration</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic3.jpg">
+                                <p>Home storage</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic4.jpg">
+                                <p>lighting solutions</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <a href="#">Explore all</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table  width="100%">
+                        <tr>
+                            <td colspan="2">
+                                <h2>Revamp your home in style</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic1.jpg">
+                                <p>Bedsheets, curtains and more</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic2.jpg">
+                                <p>Home decoration</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic3.jpg">
+                                <p>Home storage</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic4.jpg">
+                                <p>lighting solutions</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <a href="#">Explore all</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+                <td>
+                    <table  width="100%">
+                        <tr>
+                            <td colspan="2">
+                                <h2>Revamp your home in style</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic1.jpg">
+                                <p>Bedsheets, curtains and more</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic2.jpg">
+                                <p>Home decoration</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="../public/images/pic3.jpg">
+                                <p>Home storage</p>
+                            </td>
+                            <td>
+                                <img src="../public/images/pic4.jpg">
+                                <p>lighting solutions</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <a href="#">Explore all</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+
+                   Forms in HTML
+                  =============
+- Form is a container that provides various controls to interact with application and data.
+
+- Form provides an UI for interactions like view, edit, update, insert and delete.
+
+- Form comprises of various types of controls like
+        buttons
+        textbox
+        checkbox        
+        radio
+        listbox etc..
+
+Form Container:
+- Form container is designed by using
+        <form>
+
+        </form>
+
+- Form comprises of various attributes
+
+1) name
+2) id
+3) class
+
+     <form  id="frmRegister" name="RegisterForm" class="form-register">
+
+   </form>
+
+4) method  :  It defines the actions performed by form.
+            HTML form can be designed for 2 methods
+                a) GET
+                b) POST
+
+           GET is used to fetch information from server.
+           POST is used to submit information to server.
+
+Note : The default method for form is GET.
+
+
+FAQ: Can we submit information on GET?
+Ans: Yes. But not recommended.
+
+GET  vs   POST
+
+- GET submits data as querystring.
+- Data will be appended into URL
+- Anyone can view your data.
+- It is not safe
+- Easy to hack
+- It is stored in browser logs.
+- It can be bookmarked
+- You can't submit complex data. like binary
+- Limit for data 2048 chars
+- You can cache the data [buffer]
+- You can view data faster , it saves round trips.
+
+Post
+- Data will be submmited into form body
+- it is not in URL
+- safer that get
+- hard to hack
+- not stored in browser logs
+- you can't bookmark
+- no limit
+- complex data
+- can't be cached

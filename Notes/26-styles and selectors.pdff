@@ -1,0 +1,212 @@
+FAQ: What is CDN?
+Ans : Content Distribution Network
+          - We keep our resources in a server location.
+          - We access and use in various projects.
+          - We will not download the files, we will use direct server links.
+          - It save the memory space for your project.
+
+Summary
+1. Various techniques of defining styles
+        a) Inline
+        b) embedded
+        c) css
+2. Minification and CDN
+3. Media and MIME types
+
+                       Stylesheet Rules
+                       =============
+Q1. If we define all 3 types of styles in a page, which one will work?
+        a) Inline
+        b) Embedded
+        c) External File
+A.  If you are writing same attributes in all 3 locations then the priority
+        1st        Inline
+        2nd        Embedded
+        3rd        External
+
+       if you are writing different attributes in all 3 locations then all
+       will apply.
+
+Q2. Can we link multiple stylesheet to a page?
+A.    Yes
+
+Q3. If all stylesheet have same effect then which one will apply?
+A.  The latest will apply.
+
+        <link  href="a.css">
+        <link  href="b.css">     // b effects will apply
+
+      If all stylesheets have different effects, then all will apply.
+
+
+                Writing Styles for Element
+                ====================
+1. If you are writing styles inline
+       
+        <h1 style="attribute:value; attribute:value"> </h1>
+
+2. If you are writing styles embedded or external style sheet
+
+        selector
+        {
+           attribute:value;
+           attribute:value;
+        }
+
+
+                         CSS Selectors
+                         ===========
+1. Primary Selectors
+        a) Type Selector
+        b) ID Selector
+        c) Class Selector
+
+Type Selector:  It defines the element name, to which element you
+                want the styles to apply.
+
+                h2 {  }
+                p   {  }
+                li    { }
+                         table {  }
+
+               You can't ignore effects for any specific occurance.
+
+ID Selector  :   It uses an ID reference for element.
+
+               <h2  id="heading">
+               <p  id="para">
+
+                #heading {  }
+                #para  {  }
+
+               Every element can refer to one ID only.
+               You can't apply multiple categories of styles.
+
+
+Class Selector:  It uses an class reference for element.
+                  Class allows to implement multiple categories of styles
+                 
+                  .className {   }
+
+                  <div  class="class1 class2 class3 ..">
+
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marquee</title>
+        <style>
+            .text-effects {
+               text-align: center;
+               color:red;
+            }
+            .border-effects {
+              border:2px solid red;
+              box-shadow: 2px 2px 3px gray;
+            }
+            .back-effects {
+              background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+      <h1 class="back-effects text-effects border-effects">Web Technologies</h1>
+      <h1>HTML</h1>
+      <h1 class="back-effects text-effects">CSS</h1>
+      <h1>JavaScript</h1>
+    </body>
+</html>
+
+                         Selector Rules
+                        ============
+FAQ:  If we are writing effects with all selectors which one will apply?
+Ans:
+            If you are writing same attributes with all 3 selectors then
+                1st Priority        ID
+                2nd Priority        Class
+                3rd Priorty                Type
+            If you are writing different attributes then all will apply.
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marquee</title>
+        <style>
+           #heading {
+             color:red;
+           }
+           .head {
+             color:green;
+             text-align: center;
+           }
+           h1 {
+             color:blue;
+             background-color: yellow;
+           }
+        </style>
+    </head>
+    <body>
+      <h1  id="heading" class="head">Web Technologies</h1>
+      <h1>HTML</h1>
+      <h1>CSS</h1>
+      <h1>JavaScript</h1>
+    </body>
+</html>
+
+Grouping Primary Selectors:
+======================
+- You can group the selector using ", " separator
+
+        h1, p        both heading and para
+        {
+        }
+
+        h2, p, table        all three
+        {
+        }
+
+        h2, #heading, .para
+        {
+        }
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marquee</title>
+        <style>
+           #heading, p {
+             color:red;
+           }
+           .head, p {
+             color:green;
+             text-align: center;
+           }
+           h1, p {
+             color:blue;
+             background-color: yellow;
+           }
+        </style>
+    </head>
+    <body>
+      <h1  id="heading" class="head">Web Technologies</h1>
+      <h1>HTML</h1>
+      <p>It is a markup language</p>
+      <h1>CSS</h1>
+      <p id="heading">It defines styles.</p>
+      <h1>JavaScript</h1>
+      <p>It is a language.</p>
+    </body>
+</html>
+
+2. Rational Selectors - Combinators
+3. Pseudo element selectors
+4. Pseudo element classes
+5. Element state selectors
+6. Element validation state selectors
+7. Structural selectors
+8. Universal Selector
+9. Root selector
+10. Language Selector

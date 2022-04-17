@@ -1,0 +1,174 @@
+Forms in HTML
+Sudhakar Sharma
+•
+Feb 17
+<form id, name, class, method>
+a) GET
+b) POST
+
+- GET can cache the data
+- caching will save round-trips.
+
+Attributes:
+1. id
+2. name
+3. class
+4. method
+5. action          : indicates the target location where the data need to
+            be submitted.
+
+ Syntax:
+        <form method="post"  action="serverPage">
+
+  Ex:
+        <form method="post" action="page.jsp">
+
+6. novalidate:  It is used to by-pass the default HTML validations.
+
+Syntax:
+        <form method="post"  novalidate>
+        </form>
+
+                Form Elements
+- A comprises of various elements, which are designed by using
+        <input>
+        <select>
+        <option>
+        <optgroup>
+        <meter>
+        <progress>
+        <textarea> etc..
+
+                       TextBox
+                       ======
+- Textbox is used for string input.
+-  String is literal with group of chars, A-Z,0-9, Symbols.
+- Textbox is configure by using
+
+        <input type="text">
+
+Note: <input> element allows to input any value. If you want to restrict to any specific data type like number, email, string etc, then you have to use the attribute "type".
+
+- Text Box attributes
+        1. id
+        2. name
+        3. class
+ 
+   Note: Every element in form must have a "name" defined.
+            If name is not defined then form can't submit its value.
+
+        4. value  : the default value to display in textbox.
+        5. readonly: It will not allow to change the value.
+                                    But it submits the value.
+        6. disabled : It will not allow to change and submit.
+       
+Syntax:
+  <input type="text" name="Username"  disabled  value="john">
+
+        7. size        : It specifies the width of textbox. [20]
+
+Syntax:
+  <input type="text"  name="otp" size="4">
+
+        8. autofocus: It sets focus to the control automatically.
+
+Syntax:
+  <input type="text"  name="opt" size="4" autofocus>
+
+        9. placeholder: It defines the watermark text.
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+           .container div {
+               display: inline;
+           }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="container">
+                <div>
+                   
+                    <input type="text" placeholder="First Name" name="First">
+                </div>
+                <div>
+                    <input type="text" placeholder="Last Name" name="Last">
+                </div>
+                <div>
+                    <button>Register</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
+
+10. minlength  : It validates the minimum number of chars.
+11. maxlength : It validates the maximum number of chars.
+                         It will not allow exceeding chars.
+
+Syntax:
+<input type="text" name="UserName" minlength="4" maxlength="15">
+
+12. required  : It will not allow to submit empty.
+              It is used to define mandatory fields.
+Syntax:
+ <input type="text" name="UserName" required>
+
+13. list         : It uses a data list.
+           data list is used as auto complete text.
+
+Note: Data List is designed by using <datalist>
+         Data list contains options designed by using <option>
+
+   Syntax:
+        <input type="text"  name="search"  list="terms">
+        <datalist id="terms">
+         <option> Term1 </option>
+        </datalist>
+
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <style>
+         
+        </style>
+    </head>
+    <body>
+        <form align="center">
+           <h2>Google</h2>
+           <input type="text" list="terms" name="search" size="40">
+           <datalist id="terms">
+               <option>JavaScript Tutorial</option>
+               <option>HTML Tutorial</option>
+               <option>CSS Examples</option>
+               <option>JavaScript Examples</option>
+               <option>HTML Examples</option>
+           </datalist>
+           <p>
+               <button>Search</button>
+           </p>
+        </form>
+    </body>
+</html>
+
+14. pattern  : It is used to restrict the format of value enterned             into textbox.
+
+            Pattern uses a Regular Expression.
+
+            <input type="text" pattern="regExp">
+
+           Regular expression is built by using meta chars
+           and quantifiers.
+
+Meta Characters:
+         ?        zero or one occurance of character
+
+                colour
+                color

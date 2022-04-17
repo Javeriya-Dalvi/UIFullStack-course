@@ -1,0 +1,271 @@
+Tables
+Sudhakar Sharma
+•
+Feb 15
+
+Tables in HTML
+- Tables are used to store data in rows and columns.
+- Table Elements are
+        <table>
+        <caption>
+        <thead>
+        <tbody>
+        <tfoot>
+        <colgroup>
+        <tr>
+        <th>
+        <td>
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+    <body>
+        <table width="500" border="1">
+            <caption>Product Details</caption>
+            <colgroup span="3"></colgroup>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Preview</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Speaker</td>
+                    <td>5600.45</td>
+                    <td>Available</td>
+                    <td>
+                        <img src="../public/images/speaker.jpg" width="60" height="60">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Neckband</td>
+                    <td>6600.45</td>
+                    <td>Available</td>
+                    <td>
+                        <img src="../public/images/neckband.PNG" width="60" height="60">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&copy; copyright 2022</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+                   Table Attributes
+
+1. Border, Frame and Rules
+
+   Frame         : It is used for table, you can apply values
+
+            box | rhs | lhs | above | below | void
+
+         Syntax:
+          <table frame="box">
+
+  Rules        : It is used for rows, columns and groups
+
+           rows | cols | groups | none | all
+
+          Syntax:
+           <table frame="box" rules="groups">
+
+  Border        : It is used for cell. It can have values 0 or 1.
+
+                0 = false [no border]
+                1 = true  [ border ]
+                >1 = 1
+
+ Note: Border can't display if rules are defined. It is mandatory to remove rules attribute from table.  
+               
+        <table border="1" rules="none">   // invalid
+        <table border="1">
+
+2. Cellspacing and Cellpadding
+
+    cellspacing        : It sets space between cells.
+    cellpadding        : It sets space between border and content.
+
+Syntax:
+  <table  cellspacing="10" cellpadding="5" border="1" frame="void">
+
+
+3. bgcolor and background
+
+    bgcolor                : sets background color for table, group
+                  row or cell.
+
+                 <table bgcolor="yellow">
+                 <thead bgcolor="red">
+                 <tr bgcolor="yellow">
+                 <td bgcolor="red">
+
+    background        : sets background image for table, group
+                  row or cell.
+
+                <table background="imagePath">
+
+
+4. align and valign
+
+    align                : Horizontally left, center, right or justify
+    valign                : Vertically top, center, bottom.
+
+                  align => table, tr, group, cell
+                  valign => tr, group, cell
+
+   Syntax:
+          <table align="center">
+          <tr align="center" valign="top">
+          <td align="right">
+
+5. width and height
+
+        width                : It sets width for table and cell.
+        height        : It sets height for table, group, row, cell
+
+ Syntax:
+        <table width="300">
+        <th width="100">
+        <td width="200">
+
+        <tr height="100">
+        <td height="100">
+
+EX:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+       
+        </style>
+    </head>
+    <body>
+        <table width="600"   cellspacing="10" cellpadding="10" border="1"  frame="box">
+            <caption>Product Details</caption>
+            <colgroup span="3"></colgroup>
+            <thead  >
+                <tr >
+                    <th   width="200" >Name</th>
+                    <th>Price</th>
+                    <th width="190">Stock</th>
+                    <th>Preview</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr height="200">
+                    <td>Speaker</td>
+                    <td>5600.45</td>
+                    <td>Available</td>
+                    <td>
+                        <img src="../public/images/speaker.jpg" width="60" height="60">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Neckband</td>
+                    <td>6600.45</td>
+                    <td>Available</td>
+                    <td>
+                        <img src="../public/images/neckband.PNG" width="60" height="60">
+                    </td>
+                </tr>
+               
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&copy; copyright 2022</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+6. colspan and rowspan
+
+    colspan         : It is used to merge multiple columns into
+                  single cell.
+    rowspan        : It is used to merge multiple rows into        
+                  single cell.
+
+Ex:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Students</title>
+    </head>
+    <body>
+        <table width="600" border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th colspan="3">Address</th>
+                </tr>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Postal Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td rowspan="5" valign="center" align="center">560055</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td colspan="3" align="center" bgcolor="yellow">Merged Cell</td>
+                   
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                   
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                   
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                   
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td align="center" colspan="5">&copy; copyright 2022</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+

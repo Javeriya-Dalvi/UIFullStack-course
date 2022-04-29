@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline|Internal|External javascript</title>
+    <script type="text/javascript" src="/scripts/print.js">
+        // below line makes the code strictly follow the code rules errors are shown in console of x=10
+        "use strict"
+        x = 10;
+        document.write("x=" + x);
+
+
+        // function printPageEmbeded() {
+        //     window.print();
+        // }
+    </script>
+</head>
+
+<body>
+    <h1>Your ticket - Click Print Button</h1>
+    <button onclick="window.print()">Print</button>
+    <button onclick="window.print()">Print Page</button>
+    <!--  code repetation in inline not reuseable-->
+
+    <!-- <button onclick="printPageEmbeded()">Print first Page</button> -->
+    <!-- embeded script tag is used above  it is reuseable-->
+
+    <button onclick="printPageEmbeded()">Print second Page</button>
+    <!-- External javascript file is linked to script tag for above program to run -->
+</body>
+
+</html>

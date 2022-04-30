@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM hierarchy | refer by ID</title>
+
+    <script type="text/javascript">
+        function bodyload() {
+            document.getElementById("pic").src = "../images/img1.jpg";
+            document.getElementById("btnReg").value = "Register";
+            document.getElementById("btnLogin").value = "Login";
+        }
+    </script>
+</head>
+
+<body onload="bodyload()">
+    <div>
+        <img name="myImg" id="pic" alt="image here" border="1" height="100" width="100">
+    </div>
+    <div>
+        <form name="frmReg" id="frmReg">
+            <h3>Register</h3>
+            User Name:<input type="text" name="txtName">
+            <input type="button" name="btnReg" id="btnReg">
+        </form>
+
+        <form name="frmLogin">
+            <h3>Login</h3>
+            User Email:<input type="email" name="txtEmail">
+            <input type="button" name="btnLogin" id="btnLogin">
+        </form>
+    </div>
+</body>
+
+</html>

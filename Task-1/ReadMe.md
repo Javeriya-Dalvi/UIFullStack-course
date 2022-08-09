@@ -1,24 +1,24 @@
 ### Amazon Footer
-https://juveriad.github.io/UIFullStack-course/Task-1/public/index.html
+https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/index.html
 <hr>
 
 ### Amazon Shopping
-https://juveriad.github.io/UIFullStack-course/Task-1/public/amazon.html
+https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/amazon.html
 <hr>
 
 ### Fake Store API
 
-https://juveriad.github.io/UIFullStack-course/Task-1/public/fakestoreapi.html
+https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/fakestoreapi.html
 <hr>
 
 ### Naresh-IT
-https://juveriad.github.io/UIFullStack-course/Task-1/public/naresh-IT.html
+https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/naresh-IT.html
 
 ### Instagram Login
-https://juveriad.github.io/UIFullStack-course/Task-1/public/instagram.html
+https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/instagram.html
 
 ### Newspaper
-https://juveriad.github.io/UIFullStack-course/Task-1/public/newspaper.html
+https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/newspaper.html
 
 ### Keyframes animation
-https://juveriad.github.io/UIFullStack-course/Task-1/public/rotate.html
+https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/rotate.html

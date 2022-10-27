@@ -8,17 +8,17 @@ https://Juveria-Dalvi.github.io/UIFullStack-course/Task-1/public/amazon.html
 
 ### Fake Store API
 
-https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/fakestoreapi.html
+https://Juveria-Dalvi.github.io/UIFullStack-course/Task-1/public/fakestoreapi.html
 <hr>
 
 ### Naresh-IT
-https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/naresh-IT.html
+https://Juveria-Dalvi.github.io/UIFullStack-course/Task-1/public/naresh-IT.html
 
 ### Instagram Login
-https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/instagram.html
+https://Juveria-Dalvi.github.io/UIFullStack-course/Task-1/public/instagram.html
 
 ### Newspaper
-https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/newspaper.html
+https://Juveria-Dalvi.github.io/UIFullStack-course/Task-1/public/newspaper.html
 
 ### Keyframes animation
-https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/rotate.html
+https://Juveria-Dalvi.github.io/UIFullStack-course/Task-1/public/rotate.html

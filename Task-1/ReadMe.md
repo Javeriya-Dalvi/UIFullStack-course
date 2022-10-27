@@ -1,9 +1,9 @@
 ### Amazon Footer
-https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/index.html
+https://Juveria-Dalvi.github.io/UIFullStack-course/Task-1/public/index.html
 <hr>
 
 ### Amazon Shopping
-https://Javeriya-Dalvi.github.io/UIFullStack-course/Task-1/public/amazon.html
+https://Juveria-Dalvi.github.io/UIFullStack-course/Task-1/public/amazon.html
 <hr>
 
 ### Fake Store API
